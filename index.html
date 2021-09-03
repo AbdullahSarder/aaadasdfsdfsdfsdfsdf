@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Search</title>
+  <!-- Bootstrap Style -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- CSS only -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+   <header>
+       <div class="container">
+    <nav class="navbar navbar-light bg-light mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand">Book Library</a>
+          <div class="d-flex">
+            <input id='searchField'class="form-control me-2" type="search" placeholder="Search Book" aria-label="Search">
+            <button   class='btn btn-outline-success bg-info bg-gradient text-white'  onclick='SearchBook()' type='submit'>Search</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+   </header>
+
+   <main>
+          <div>
+            <p id="error-message" class=" text-danger text-center">Please Input Value</p>
+            <p id="notMatch" class=" text-danger text-center">No result found</p>
+            <p id="resultFound" class="text-center">Total Result Found:100</p>
+        </div>
+       <!-- Search Rersult -->
+       <div class="container">
+        <div id="searchRsult" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- <div class="col">
+        
+            </div> -->
+        </div>
+          
+       </div>
+   </main>
+   <!-- Normal Javascript -->
+   <script src="js/scriptfile.js"></script>
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
